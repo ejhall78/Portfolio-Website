@@ -417,7 +417,7 @@ header {
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 1.5em 0;
+  padding: 2.5em 0;
   font-size: var(--fs-h3);
 }
 
@@ -445,4 +445,26 @@ header {
   justify-content: center;
   margin: 2em 0 0;
   padding: 0;
+}
+
+.code-accounts-list__item {
+  margin: 0 0.5em;
+}
+
+.code-accounts-list__link {
+  padding: 0.5em;
+}
+
+/* Individual portfolio stlying */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }

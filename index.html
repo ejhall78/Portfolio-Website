@@ -4,21 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio Site</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Ed Hall Portfolio Site</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1 class="title">Ed's Portfolio Site</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-    <p>Welcome to my website. Please enjoy your stay! :-)</p>
-    <h2>Past Experience</h2>
-    <ul>
-      <li>Job title 1</li>
-      <li>Job title 2</li>
-    </ul>
-    <a href="https://github.com/ejhall78">My GitHub</a>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#technologies">My Technologies</a></li>
+        <li class="nav__item"><a href="#about">About me</a></li>
+        <li class="nav__item"><a href="#projects">My Projects</a></li>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I'm <strong>Ed Hall</strong>
+      </h1>
+      <p class="section_subtitle section__subtitle--intro">
+        full stack developer
+      </p>
+      <img src="images/EdHall.jpg" alt="a picture of Ed Hall smiling" />
+    </section>
+
+    <!-- My Technologies -->
+    <section class="technologies" id="technologies">
+      <h2 class="section__title section__title--technologies">What I do</h2>
+      <div class="technologies">
+        <div class="technology">
+          <h3>Front-End</h3>
+          <p>
+            <!-- React, Svelte, html, Javascript, TypeScript, axios -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            voluptatibus, velit tempore rem dolores cum quisquam tenetur, quae,
+            error illum minus ipsum corrupti aperiam repellat. Iure dolor eos
+            inventore cumque!
+          </p>
+        </div>
+        <div class="technology">
+          <h3>Back-End</h3>
+          <p>
+            <!-- Node, PostgreSQL, express, Python, JavaScript, TypeScript, Firebase, Jest, TDD, yaml, Github Actions (CICD)  -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            voluptatibus, velit tempore rem dolores cum quisquam tenetur, quae,
+            error illum minus ipsum corrupti aperiam repellat. Iure dolor eos
+            inventore cumque!
+          </p>
+        </div>
+        <div class="technology">
+          <h3>Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            voluptatibus, velit tempore rem dolores cum quisquam tenetur, quae,
+            error illum minus ipsum corrupti aperiam repellat. Iure dolor eos
+            inventore cumque!
+          </p>
+        </div>
+      </div>
+
+      <a href="#projects" class="btn">My Projects</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section_subtitle section__subtitle--about">
+        full stack developer in training based in Leeds, UK
+      </p>
+
+      <div class="about__body">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+          repellat alias similique, rem expedita soluta porro consectetur modi,
+          suscipit perferendis illo architecto ipsam totam nulla atque laborum
+          neque reiciendis voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+          repellat alias similique, rem expedita soluta porro consectetur modi,
+          suscipit perferendis illo architecto ipsam totam nulla atque laborum
+          neque reiciendis voluptatum.
+        </p>
+      </div>
+
+      <img
+        src="images/IMG_3538.JPG"
+        alt="Ed on Clifton Bridge in Bristol, UK"
+      />
+    </section>
+
+    <!-- My Projects -->
+    <section class="projects" id="projects">
+      <h2 class="section__title section__title--projects">My Projects</h2>
+      <p class="section_subtitle section__subtitle--projects">
+        here are some of my projects
+      </p>
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="images/EdHall.jpg" alt="#" class="portfolio__img" />
+        </a>
+
+        <a href="#" class="portfolio__item">
+          <img src="images/EdHall.jpg" alt="#" class="portfolio__img" />
+        </a>
+
+        <a href="#" class="portfolio__item">
+          <img src="images/EdHall.jpg" alt="#" class="portfolio__img" />
+        </a>
+
+        <a href="#" class="portfolio__item">
+          <img src="images/EdHall.jpg" alt="#" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:ejhall78@gmail.com" class="footer__link"
+        >ejhall78@gmail.com</a
+      >
+      <ul class="code-accounts-list">
+        <li class="code-accounts-list__item">
+          <a href="https://github.com/ejhall78">GitHub</a>
+        </li>
+        <li class="code-accounts-list__item">
+          <a href="">Codewars</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

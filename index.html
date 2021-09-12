@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ed Hall Portfolio Site</title>
-    <link rel="stylesheet" href="styles/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -16,6 +15,13 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <header>
@@ -38,17 +44,21 @@
       <p class="section_subtitle section__subtitle--intro">
         full stack developer
       </p>
-      <img src="images/EdHall.jpg" alt="a picture of Ed Hall smiling" />
+      <img
+        src="images/EdHall.jpg"
+        alt="a picture of Ed Hall smiling"
+        class="intro__img"
+      />
     </section>
 
     <!-- My Technologies -->
     <section class="technologies" id="technologies">
       <h2 class="section__title section__title--technologies">What I do</h2>
-      <div class="technologies">
+      <div class="technologies__list">
         <div class="technology">
           <h3>Front-End</h3>
           <p>
-            <!-- React, Svelte, html, Javascript, TypeScript, axios -->
+            <!-- React, Svelte, html, Javascript, TypeScript, axios, esLint, Husky -->
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
             voluptatibus, velit tempore rem dolores cum quisquam tenetur, quae,
             error illum minus ipsum corrupti aperiam repellat. Iure dolor eos
@@ -104,6 +114,7 @@
       <img
         src="images/IMG_3538.JPG"
         alt="Ed on Clifton Bridge in Bristol, UK"
+        class="about__img"
       />
     </section>
 
@@ -133,16 +144,15 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a href="mailto:ejhall78@gmail.com" class="footer__link"
         >ejhall78@gmail.com</a
       >
       <ul class="code-accounts-list">
         <li class="code-accounts-list__item">
-          <a href="https://github.com/ejhall78">GitHub</a>
-        </li>
-        <li class="code-accounts-list__item">
-          <a href="">Codewars</a>
+          <a href="https://github.com/ejhall78">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
       </ul>
     </footer>

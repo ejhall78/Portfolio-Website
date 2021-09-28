@@ -246,6 +246,7 @@ header {
 
 .intro {
   position: relative;
+  padding-bottom: 30px;
 }
 
 .intro__img {
@@ -414,6 +415,10 @@ header {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.75;
+}
+
+.portfolio-item-individual__img {
+  box-shadow: var(--bs);
 }
 
 /* footer */
